@@ -143,27 +143,66 @@
 
 // const calc = (a, b) =>  a + b;
 
-const usdCurr = 28;
-const discount = 0.9;
+// const usdCurr = 28;
+// const discount = 0.9;
 
-function convert (amount, curr) {
-    return curr * amount;
-}
+// function convert (amount, curr) {
+//     return curr * amount;
+// }
 
-function promotion(result) {
-    console.log(result * discount);
-}
+// function promotion(result) {
+//     console.log(result * discount);
+// }
 
-promotion(convert(500, usdCurr));
+// promotion(convert(500, usdCurr));
 
-function test() {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-        if (i === 3) {return;}
-    }
-    console.log('done');
-}
-test();
+// function test() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         if (i === 3) {return;}
+//     }
+//     console.log('done');
+// }
+// test();
 
-function doNothing() {}
-console.log(doNothing() === undefined);
+// function doNothing() {}
+// console.log(doNothing() === undefined);
+/* если функция должна вернуть какой-то результат, именно вернуть для дальнейшей работы,
+то нам пригодится ключевое слово return
+так же можно досрочно закончить функцию, просто написав return*/
+
+// Методы и свойства строк и чисел 
+"use strict";
+// Строки
+const str = "some text";
+const arr = [1, 2, 3];
+
+console.log(str.length); // метод length в данном случае вывед длину строки в консоль
+console.log(arr.length); // так же можно и у массива
+
+const strUpCase = str.toLocaleUpperCase();
+console.log(strUpCase);
+console.log(str);
+
+const fruit = "some fruit";
+console.log(fruit.indexOf("fruit")); /* метод indexOf показывает с какого индекса начинается агрумент
+либо действительно ли в этой строке есть искомое значение  !Поиск подстроки!*/
+
+const logg = "Hello world";
+console.log(logg.slice(6, 11)); /* при использовании метода slice в аргументе указывается начальный и конечный
+индекс, ко всему, конечный индекс должен указываться не включающийся, то есть в примере с logg конечный индекс 
+равен 10, и если мы так запустим консоль нам выведет worl, поэтому в методе указываем 11 как конечный аргумент*/
+console.log(logg.substring(6, 11)); /* то же самое что и slice, но нельзя использовать отрицательные числа 
+з.ы. загугли*/
+console.log(logg.substr(6, 5));/*substr в аргументе принимает старт и количество символов*/
+
+//Числа 
+
+const num = 12.2;
+console.log(Math.round(num)); /*с помощью обекта Math и метода round мы можем вернуть
+значение числа, округлённое до ближайшего целого, встроенный оъект Math имеет много методов -- загугли*/
+
+const test = "12.2px";
+console.log(parseInt(test));  /*parseInt переводит аргумент в другую систему исчислений */
+console.log(parseFloat(test)); /*Функция parseFloat() принимает строку в качестве аргумента 
+и возвращает десятичное число (число с плавающей точкой)*/
