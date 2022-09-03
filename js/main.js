@@ -70,11 +70,11 @@
 // console.log(arr.length);
 // console.log(arr);
 
-// arr.forEach(function(item, i, arr) {
+// arr.forEach(function(item, i, arr) { //forEach() выполняет указанную функцию один раз для каждого элемента в массиве.
 //     console.log(`${i}: ${item} внутри массива ${arr} `);
 // });
 
-//arr.pop(); // удаляет значение с конца массива
+// arr.pop(); // удаляет значение с конца массива
 
 // arr.push(10); // добавляет (в данном случае 10) в конец массива элемент
 // console.log(arr);
@@ -89,4 +89,6 @@
 
 const string = prompt("", "");
 const products = string.split(", "); //Метод split() разбивает объект String на массив строк путём разделения строки
-console.log(products);
+products.sort(); // Метод sort() сортирует массив 
+console.log(products.join("; ")); // Метод join() объединяет все элементы массива в строку.
+
