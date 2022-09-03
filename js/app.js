@@ -206,3 +206,109 @@
 // console.log(parseInt(test));  /*parseInt переводит аргумент в другую систему исчислений */
 // console.log(parseFloat(test)); /*Функция parseFloat() принимает строку в качестве аргумента 
 // и возвращает десятичное число (число с плавающей точкой)*/
+
+
+
+const obj = {
+    a : 5,
+    b : 1  
+};
+
+// const copy = obj; // передача поссылке
+// copy.a = 10; 
+// console.log(copy);
+// console.log(obj);
+
+function copy(mainObj) { // эта функция создаст новый объект перебирая старые свойства
+    let objCopy = {};
+
+    let key;
+    for(key in mainObj) {
+        objCopy[key] = mainObj[key]; // из объекта скопируем свойства в новый объект по ключам
+    }
+    return objCopy;
+}
+
+const numbers = {
+    a : 2,
+    b : 5,
+    c : {
+        x : 7,
+        y : 4 
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+
+newNumbers.c.x = 10; // при вложенности значения заменяются
+
+// console.log(newNumbers);
+
+// console.log(numbers);  // здесь мы склонировали объект при помощи функции copy()
+
+/*это поверхностная копия обьекта, она создает обычные свойства которые были в родителе  
+и создает независимые структуры, но если в свойствах есть объект или массив и тд. его клонирование будет ссылочным
+нормально будут клонироваться свойства которые лежат на первом уровне вложенности*/
+
+// метод Object.assign соединяет объекты
+
+// добавляем новый объект 
+const asd = {
+    d : 17,
+    e : 20
+};
+
+// выводим в консоль 
+//console.log(Object.assign(numbers, asd)); // { a: 2, b: 5, c: { x: 10, y: 4 }, d: 17, e: 20 }
+
+// создаем просто копию объекта через пустой объект
+
+const clone = Object.assign({}, asd);
+
+clone.d = 20;
+
+// console.log(asd); // { d: 17, e: 20 }
+// console.log(clone); // { d: 20, e: 20 }
+
+// клонирование массивов
+
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice(); //Метод slice() возвращает новый массив, содержащий копию части исходного массива.
+
+newArray[2] = 'cssasd';
+
+console.log(oldArray);
+console.log(newArray);
+
+// оператор spread ...
+
+const japan = ['honda', 'toyota', 'lexus'],
+      germany = ['opel', 'bmw', 'mercedes'],
+      carBrands = [...germany, ...japan, 'lifan', 'vaz'];
+
+console.log(carBrands);
+
+function log(a, b, c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+
+const array = ["a", "b"];
+
+const newAarray = [...array];
+
+const q = {
+    one : 1,
+    two : 2
+};
+
+const newQ = {...q};
+
+console.log(newQ);
