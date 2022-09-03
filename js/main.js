@@ -64,15 +64,15 @@
 
 // Массивы и псевдомассивы
 
-const arr = [1, 2, 3, 6, 8];
+// const arr = [1, 2, 3, 6, 8];
 
 // arr[99] = 0;
 // console.log(arr.length);
 // console.log(arr);
 
-arr.forEach(function(item, i, arr) {
-    console.log(`${i}: ${item} внутри массива ${arr} `);
-});
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr} `);
+// });
 
 //arr.pop(); // удаляет значение с конца массива
 
@@ -83,6 +83,10 @@ arr.forEach(function(item, i, arr) {
 //     console.log(arr[i]);
 // }
 
-for (let value of arr) {
-    console.log(value);
-}
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+const string = prompt("", "");
+const products = string.split(", "); //Метод split() разбивает объект String на массив строк путём разделения строки
+console.log(products);
