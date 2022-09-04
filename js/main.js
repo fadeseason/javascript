@@ -87,8 +87,8 @@
 //     console.log(value);
 // }
 
-const string = prompt("", "");
-const products = string.split(", "); //Метод split() разбивает объект String на массив строк путём разделения строки
-products.sort(); // Метод sort() сортирует массив 
-console.log(products.join("; ")); // Метод join() объединяет все элементы массива в строку.
+// const string = prompt("", "");
+// const products = string.split(", "); //Метод split() разбивает объект String на массив строк путём разделения строки
+// products.sort(); // Метод sort() сортирует массив
+// console.log(products.join("; ")); // Метод join() объединяет все элементы массива в строку.
 

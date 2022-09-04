@@ -1,314 +1,345 @@
-// // if (4 == 9) {
-// //     console.log('ok!');
-// // } else {
-// //     console.log('error!');
-// // }
-
-// // const num = 50;
-
-// // switch (num) {
-// //     case 49:
-// //         console.log('Error!');
-// //         break;
-// //     case 100: 
-// //         console.log('Error!');
-// //         break;
-// //     case 50:
-// //         console.log('Done!');
-// //         break;
-// //     default:
-// //         console.log('Not today:(');
-// //         break;
-// // }
-
-// // const hamburger = 5;
-// // const fries = 6; 
-
-// // if (hamburger && fries) { // если хотя бы одна перменная true, код будет выполняться 
-// //     console.log('Я сыт!');
-// // } else {
-// //     console.log('Я голоден!');
-// // }
-
-// // const hamburger = 3;
-// // const fries = 3;
-// // const cola = 0;
-// // const nuggets = 2;
-
-// // if (hamburger === 3 && cola === 2 || fries === 3 && nuggets ) {
-// //     console.log('Все сыты!');
-// // } else {
-// //     console.log('We leave(');
-// // }
-// // let hamburger;
-// // const fries = NaN;
-// // const cola = 0;
-// // const nuggets = 2;
- 
-// // if (hamburger && cola || fries === 3 && nuggets) {
-// //    console.log('Done!')
-// // }
-// // "use strict";
-
-// // let num = 50;
-// // // while(num <= 55) {
-// // //     console.log(num);
-// // //     num++;
+// // // if (4 == 9) {
+// // //     console.log('ok!');
+// // // } else {
+// // //     console.log('error!');
 // // // }
 
-// // do {
-// //     console.log(num);
-// //     num++;
-// // } while (num < 55);
+// // // const num = 50;
 
-// // for (let i = 1; i < 10; i++) {
-// //     if (i === 6) {
-// //         break;
-// //     }
-// //     console.log(i);
-// // }
+// // // switch (num) {
+// // //     case 49:
+// // //         console.log('Error!');
+// // //         break;
+// // //     case 100: 
+// // //         console.log('Error!');
+// // //         break;
+// // //     case 50:
+// // //         console.log('Done!');
+// // //         break;
+// // //     default:
+// // //         console.log('Not today:(');
+// // //         break;
+// // // }
+
+// // // const hamburger = 5;
+// // // const fries = 6; 
+
+// // // if (hamburger && fries) { // если хотя бы одна перменная true, код будет выполняться 
+// // //     console.log('Я сыт!');
+// // // } else {
+// // //     console.log('Я голоден!');
+// // // }
+
+// // // const hamburger = 3;
+// // // const fries = 3;
+// // // const cola = 0;
+// // // const nuggets = 2;
+
+// // // if (hamburger === 3 && cola === 2 || fries === 3 && nuggets ) {
+// // //     console.log('Все сыты!');
+// // // } else {
+// // //     console.log('We leave(');
+// // // }
+// // // let hamburger;
+// // // const fries = NaN;
+// // // const cola = 0;
+// // // const nuggets = 2;
+ 
+// // // if (hamburger && cola || fries === 3 && nuggets) {
+// // //    console.log('Done!')
+// // // }
+// // // "use strict";
+
+// // // let num = 50;
+// // // // while(num <= 55) {
+// // // //     console.log(num);
+// // // //     num++;
+// // // // }
+
+// // // do {
+// // //     console.log(num);
+// // //     num++;
+// // // } while (num < 55);
+
+// // // for (let i = 1; i < 10; i++) {
+// // //     if (i === 6) {
+// // //         break;
+// // //     }
+// // //     console.log(i);
+// // // }
 
 
-// // for (let i = 0; i < 3; i++){
-// //     console.log(i);
-// //     for (let j = 0; j < 3; j++){
-// //         console.log(j);  
-// //     }
-// // }
+// // // for (let i = 0; i < 3; i++){
+// // //     console.log(i);
+// // //     for (let j = 0; j < 3; j++){
+// // //         console.log(j);  
+// // //     }
+// // // }
 
-// // *
-// // **       задача на построение треугольника
-// // ***
-// // ****
-// // *****
-// // ******
+// // // *
+// // // **       задача на построение треугольника
+// // // ***
+// // // ****
+// // // *****
+// // // ******
 
-// // let result = '';
-// // const lenght = 7;
+// // // let result = '';
+// // // const lenght = 7;
 
-// // for (let i = 0; i < lenght; i++){
+// // // for (let i = 0; i < lenght; i++){
     
-// //     for (let j = 0; j < i; j++){
-// //         result += '*';
+// // //     for (let j = 0; j < i; j++){
+// // //         result += '*';
+// // //     }
+
+// // //     result += '\n';
+// // // }
+
+// // // console.log(result);
+
+// // // first: for (let i = 0; i < 3; i++){
+// // //     console.log(`First level : ${i}`);
+// // //     for (let j = 0; j < 3; j++){
+// // //         console.log(`Second level : ${j}`);  
+// // //         for (let k = 0; k < 3; k++){
+// // //             if (k === 2) {
+// // //             break first;
+// // //             }
+// // //             console.log(`Third level : ${k}`);  
+// // //         }
+// // //     }
+// // // }
+// // "use strict";
+
+// // let num = 20;
+
+// // function showFirstMessage(text){
+// //     console.log(text);
+// //     console.log(num);
+// // }
+// // showFirstMessage('Hello World!');
+// // console.log(num);
+
+// // // function calc(a, b){
+// // //     return (a + b);
+// // // }
+// // // console.log(calc(4, 6));
+// // // console.log(calc(11, 6));
+// // // console.log(calc(2, 6));
+
+// // function ret() {
+// //     let num = 50;
+// //     return num;
+// // }
+
+// // const anotherNum = ret();
+// // console.log(anotherNum);
+
+// // const logger = function() {
+// //     console.log('Hello');
+// // };
+
+// // logger();
+
+// // const calc = (a, b) =>  a + b;
+
+// // const usdCurr = 28;
+// // const discount = 0.9;
+
+// // function convert (amount, curr) {
+// //     return curr * amount;
+// // }
+
+// // function promotion(result) {
+// //     console.log(result * discount);
+// // }
+
+// // promotion(convert(500, usdCurr));
+
+// // function test() {
+// //     for (let i = 0; i < 5; i++) {
+// //         console.log(i);
+// //         if (i === 3) {return;}
 // //     }
-
-// //     result += '\n';
+// //     console.log('done');
 // // }
+// // test();
 
-// // console.log(result);
+// // function doNothing() {}
+// // console.log(doNothing() === undefined);
+// /* если функция должна вернуть какой-то результат, именно вернуть для дальнейшей работы,
+// то нам пригодится ключевое слово return
+// так же можно досрочно закончить функцию, просто написав return*/
 
-// // first: for (let i = 0; i < 3; i++){
-// //     console.log(`First level : ${i}`);
-// //     for (let j = 0; j < 3; j++){
-// //         console.log(`Second level : ${j}`);  
-// //         for (let k = 0; k < 3; k++){
-// //             if (k === 2) {
-// //             break first;
-// //             }
-// //             console.log(`Third level : ${k}`);  
-// //         }
-// //     }
-// // }
-// "use strict";
+// // Методы и свойства строк и чисел 
+// // "use strict";
+// // // Строки
+// // const str = "some text";
+// // const arr = [1, 2, 3];
 
-// let num = 20;
+// // console.log(str.length); // метод length в данном случае вывед длину строки в консоль
+// // console.log(arr.length); // так же можно и у массива
 
-// function showFirstMessage(text){
-//     console.log(text);
-//     console.log(num);
-// }
-// showFirstMessage('Hello World!');
-// console.log(num);
+// // const strUpCase = str.toLocaleUpperCase();
+// // console.log(strUpCase);
+// // console.log(str);
 
-// // function calc(a, b){
-// //     return (a + b);
-// // }
-// // console.log(calc(4, 6));
-// // console.log(calc(11, 6));
-// // console.log(calc(2, 6));
+// // const fruit = "some fruit";
+// // console.log(fruit.indexOf("fruit")); /* метод indexOf показывает с какого индекса начинается агрумент
+// // либо действительно ли в этой строке есть искомое значение  !Поиск подстроки!*/
 
-// function ret() {
-//     let num = 50;
-//     return num;
-// }
+// // const logg = "Hello world";
+// // console.log(logg.slice(6, 11)); /* при использовании метода slice в аргументе указывается начальный и конечный
+// // индекс, ко всему, конечный индекс должен указываться не включающийся, то есть в примере с logg конечный индекс 
+// // равен 10, и если мы так запустим консоль нам выведет worl, поэтому в методе указываем 11 как конечный аргумент*/
+// // console.log(logg.substring(6, 11)); /* то же самое что и slice, но нельзя использовать отрицательные числа 
+// // з.ы. загугли*/
+// // console.log(logg.substr(6, 5));/*substr в аргументе принимает старт и количество символов*/
 
-// const anotherNum = ret();
-// console.log(anotherNum);
+// // //Числа 
 
-// const logger = function() {
-//     console.log('Hello');
+// // const num = 12.2;
+// // console.log(Math.round(num)); /*с помощью обекта Math и метода round мы можем вернуть
+// // значение числа, округлённое до ближайшего целого, встроенный оъект Math имеет много методов -- загугли*/
+
+// // const test = "12.2px";
+// // console.log(parseInt(test));  /*parseInt переводит аргумент в другую систему исчислений */
+// // console.log(parseFloat(test)); /*Функция parseFloat() принимает строку в качестве аргумента 
+// // и возвращает десятичное число (число с плавающей точкой)*/
+
+
+
+// const obj = {
+//     a : 5,
+//     b : 1  
 // };
 
-// logger();
+// // const copy = obj; // передача поссылке
+// // copy.a = 10; 
+// // console.log(copy);
+// // console.log(obj);
 
-// const calc = (a, b) =>  a + b;
+// function copy(mainObj) { // эта функция создаст новый объект перебирая старые свойства
+//     let objCopy = {};
 
-// const usdCurr = 28;
-// const discount = 0.9;
-
-// function convert (amount, curr) {
-//     return curr * amount;
-// }
-
-// function promotion(result) {
-//     console.log(result * discount);
-// }
-
-// promotion(convert(500, usdCurr));
-
-// function test() {
-//     for (let i = 0; i < 5; i++) {
-//         console.log(i);
-//         if (i === 3) {return;}
+//     let key;
+//     for(key in mainObj) {
+//         objCopy[key] = mainObj[key]; // из объекта скопируем свойства в новый объект по ключам
 //     }
-//     console.log('done');
+//     return objCopy;
 // }
-// test();
 
-// function doNothing() {}
-// console.log(doNothing() === undefined);
-/* если функция должна вернуть какой-то результат, именно вернуть для дальнейшей работы,
-то нам пригодится ключевое слово return
-так же можно досрочно закончить функцию, просто написав return*/
+// const numbers = {
+//     a : 2,
+//     b : 5,
+//     c : {
+//         x : 7,
+//         y : 4 
+//     }
+// };
 
-// Методы и свойства строк и чисел 
-// "use strict";
-// // Строки
-// const str = "some text";
-// const arr = [1, 2, 3];
+// const newNumbers = copy(numbers);
 
-// console.log(str.length); // метод length в данном случае вывед длину строки в консоль
-// console.log(arr.length); // так же можно и у массива
+// newNumbers.a = 10;
 
-// const strUpCase = str.toLocaleUpperCase();
-// console.log(strUpCase);
-// console.log(str);
+// newNumbers.c.x = 10; // при вложенности значения заменяются
 
-// const fruit = "some fruit";
-// console.log(fruit.indexOf("fruit")); /* метод indexOf показывает с какого индекса начинается агрумент
-// либо действительно ли в этой строке есть искомое значение  !Поиск подстроки!*/
+// // console.log(newNumbers);
 
-// const logg = "Hello world";
-// console.log(logg.slice(6, 11)); /* при использовании метода slice в аргументе указывается начальный и конечный
-// индекс, ко всему, конечный индекс должен указываться не включающийся, то есть в примере с logg конечный индекс 
-// равен 10, и если мы так запустим консоль нам выведет worl, поэтому в методе указываем 11 как конечный аргумент*/
-// console.log(logg.substring(6, 11)); /* то же самое что и slice, но нельзя использовать отрицательные числа 
-// з.ы. загугли*/
-// console.log(logg.substr(6, 5));/*substr в аргументе принимает старт и количество символов*/
+// // console.log(numbers);  // здесь мы склонировали объект при помощи функции copy()
 
-// //Числа 
+// /*это поверхностная копия обьекта, она создает обычные свойства которые были в родителе  
+// и создает независимые структуры, но если в свойствах есть объект или массив и тд. его клонирование будет ссылочным
+// нормально будут клонироваться свойства которые лежат на первом уровне вложенности*/
 
-// const num = 12.2;
-// console.log(Math.round(num)); /*с помощью обекта Math и метода round мы можем вернуть
-// значение числа, округлённое до ближайшего целого, встроенный оъект Math имеет много методов -- загугли*/
+// // метод Object.assign соединяет объекты
 
-// const test = "12.2px";
-// console.log(parseInt(test));  /*parseInt переводит аргумент в другую систему исчислений */
-// console.log(parseFloat(test)); /*Функция parseFloat() принимает строку в качестве аргумента 
-// и возвращает десятичное число (число с плавающей точкой)*/
+// // добавляем новый объект 
+// const asd = {
+//     d : 17,
+//     e : 20
+// };
 
+// // выводим в консоль 
+// //console.log(Object.assign(numbers, asd)); // { a: 2, b: 5, c: { x: 10, y: 4 }, d: 17, e: 20 }
 
+// // создаем просто копию объекта через пустой объект
 
-const obj = {
-    a : 5,
-    b : 1  
-};
+// const clone = Object.assign({}, asd);
 
-// const copy = obj; // передача поссылке
-// copy.a = 10; 
-// console.log(copy);
-// console.log(obj);
+// clone.d = 20;
 
-function copy(mainObj) { // эта функция создаст новый объект перебирая старые свойства
-    let objCopy = {};
+// // console.log(asd); // { d: 17, e: 20 }
+// // console.log(clone); // { d: 20, e: 20 }
 
-    let key;
-    for(key in mainObj) {
-        objCopy[key] = mainObj[key]; // из объекта скопируем свойства в новый объект по ключам
-    }
-    return objCopy;
-}
+// // клонирование массивов
 
-const numbers = {
-    a : 2,
-    b : 5,
-    c : {
-        x : 7,
-        y : 4 
-    }
-};
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice(); //Метод slice() возвращает новый массив, содержащий копию части исходного массива.
 
-const newNumbers = copy(numbers);
+// newArray[2] = 'cssasd';
 
-newNumbers.a = 10;
+// console.log(oldArray);
+// console.log(newArray);
 
-newNumbers.c.x = 10; // при вложенности значения заменяются
+// // оператор spread ...
 
-// console.log(newNumbers);
+// const japan = ['honda', 'toyota', 'lexus'],
+//       germany = ['opel', 'bmw', 'mercedes'],
+//       carBrands = [...germany, ...japan, 'lifan', 'vaz'];
 
-// console.log(numbers);  // здесь мы склонировали объект при помощи функции copy()
+// console.log(carBrands);
 
-/*это поверхностная копия обьекта, она создает обычные свойства которые были в родителе  
-и создает независимые структуры, но если в свойствах есть объект или массив и тд. его клонирование будет ссылочным
-нормально будут клонироваться свойства которые лежат на первом уровне вложенности*/
+// function log(a, b, c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
 
-// метод Object.assign соединяет объекты
+// const num = [2, 5, 7];
 
-// добавляем новый объект 
-const asd = {
-    d : 17,
-    e : 20
-};
+// log(...num);
 
-// выводим в консоль 
-//console.log(Object.assign(numbers, asd)); // { a: 2, b: 5, c: { x: 10, y: 4 }, d: 17, e: 20 }
+// const array = ["a", "b"];
 
-// создаем просто копию объекта через пустой объект
+// const newAarray = [...array];
 
-const clone = Object.assign({}, asd);
+// const q = {
+//     one : 1,
+//     two : 2
+// };
 
-clone.d = 20;
+// const newQ = {...q};
 
-// console.log(asd); // { d: 17, e: 20 }
-// console.log(clone); // { d: 20, e: 20 }
+// console.log(newQ);
+// // ООП прототипно-ориентированное наследование
 
-// клонирование массивов
+// let str = "some";
+// let strObj = new String(str);
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice(); //Метод slice() возвращает новый массив, содержащий копию части исходного массива.
+// console.log(typeof(str));
+// console.log(typeof(strObj));
 
-newArray[2] = 'cssasd';
+// const soldier = {
+//     health : 400,
+//     armor : 100,
+//     sayHello : function(){
+//         console.log("hello");
+//     }
+// };
 
-console.log(oldArray);
-console.log(newArray);
+// const john = Object.create(soldier);// создаем новый объект джон, который будет прототипно наследоваться от soldier
+// //Метод Object.create() создаёт новый объект с указанным прототипом и свойствами.
+// // const john = {
+// //     health : 100
+// // };
 
-// оператор spread ...
+// //john.__proto__ = soldier; // уже не используется
 
-const japan = ['honda', 'toyota', 'lexus'],
-      germany = ['opel', 'bmw', 'mercedes'],
-      carBrands = [...germany, ...japan, 'lifan', 'vaz'];
+// //Object.setPrototypeOf(john, soldier); // первым идет объект для которого хотим назначить прототип
+//                                       // вторым идет объект из которого делаем прототип
+// // установили прототип для john от soldier
+// //Метод Object.setPrototypeOf() устанавливает прототип
+// // (то есть, внутреннее свойство [[Prototype]]) указанного объекта в другой объект или null.
 
-console.log(carBrands);
-
-function log(a, b, c){
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
-
-const num = [2, 5, 7];
-
-log(...num);
-
-const array = ["a", "b"];
-
-const newAarray = [...array];
-
-const q = {
-    one : 1,
-    two : 2
-};
-
-const newQ = {...q};
-
-console.log(newQ);
+// john.sayHello();
