@@ -92,3 +92,53 @@
 // products.sort(); // Метод sort() сортирует массив
 // console.log(products.join("; ")); // Метод join() объединяет все элементы массива в строку.
 
+// function createCounter () {
+//    let counter = 0;
+
+//    const myFunction = function () {
+//       counter=counter + 1;
+//       return counter;
+//    };
+
+//    return myFunction;
+// }
+
+// const increment = createCounter();
+
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+
+// console.log(c1, c2, c3);
+
+// let i = 5;
+// console.log(i++); // 5 постфиксная форма, вернет исходное значение, а после уже увеличит на единицу
+// префиксная форма ++i возвращает сразу увеличенный на единицу результат
+
+// let qwer = [ ] + false - null + true ; // NaN читай тетрадку
+
+// let y = 1;
+// let x = y = 2;
+// console.log(x); // 2
+
+// console.log([ ] + 1 + 2); // 12
+
+// console.log("1"[0] ); // 1 к каждому элементу строки можно обратиться по его индексу,
+// в данном случае строка "1" и ее индекс 0
+
+// console.log(2 && 1 && null && 0 && undefined); // null остановится на первом ложном значении
+
+//Есть ли разница между выражениями? !!( a && b ) и (a && b)? // в данном случае оператор !! превращает (a && b)
+// в boolean тип данных
+
+//Что выведет этот код: alert( null || 2 && 3 || 4 ); ? // 3 И && запинается на лжи, ИЛИ || запинается на правде
+
+// let a = [1, 2, 3];
+// let b = [1, 2, 3]; // Правда ли что a == b ?
+// ответ нет у переменных одинаковые данные, но это разные хранилища информации
+// console.log(a == b);
+// console.log(0 || "" || 2 || undefined || true || false ); // 2
+
+// Что выведет этот код: alert( +"Infinity" ); ? // infinity
+
+//"Ёжик" > "яблоко" false
