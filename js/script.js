@@ -66,12 +66,12 @@ const personalMovieDb = {
 
 };
 
-personalMovieDb.start();
+// personalMovieDb.start();
 
-personalMovieDb.rememberMyFilms();
+// personalMovieDb.rememberMyFilms();
 
-personalMovieDb.writeYourGenres();
+// personalMovieDb.writeYourGenres();
 
-personalMovieDb.detectPersonalLevel();
+// personalMovieDb.detectPersonalLevel();
 
-console.log(personalMovieDb);
+// console.log(personalMovieDb);
